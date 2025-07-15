@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SAKEC E-Cell</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=50&h=50&fit=crop&crop=center" alt="SAKEC E-Cell Logo">
+                    <span>SAKEC E-Cell</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="startups.html" class="nav-link">Startups</a></li>
+                    <li><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon theme-icon" id="theme-icon"></i>
+                    </button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">Get in touch with us to start your entrepreneurial journey</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="page-container">
+        <!-- Contact Information -->
+        <section style="padding: 90px 0 60px; background: var(--bg-primary);">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Address</h3>
+                                <p>Shah & Anchor Kutchhi Engineering College<br>
+                                Mahavir Education Trust Chowk, W.T. Patil Marg<br>
+                                Chembur, Mumbai - 400088<br>
+                                Maharashtra, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone Numbers</h3>
+                                <p>Main Office: +91 22 2522 7651<br>
+                                E-Cell Coordinator: +91 98765 43210<br>
+                                Student Helpline: +91 98765 43211</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email Addresses</h3>
+                                <p>General Inquiries: info@sakececell.com<br>
+                                Events: events@sakececell.com<br>
+                                Incubation: incubation@sakececell.com<br>
+                                Partnership: partner@sakececell.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Office Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 9:00 AM - 2:00 PM<br>
+                                Sunday: Closed<br>
+                                <em>Extended hours during events</em></p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="form-container">
+                        <h2 style="margin-bottom: 1.5rem; text-align: center;">Send us a Message</h2>
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required class="form-control">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required class="form-control">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="organization">College/Organization</label>
+                                <input type="text" id="organization" name="organization" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="department">Department/Interest *</label>
+                                <select id="department" name="department" required class="form-control">
+                                    <option value="">Select a department...</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="events">Event Registration</option>
+                                    <option value="incubation">Startup Incubation</option>
+                                    <option value="mentorship">Mentorship Program</option>
+                                    <option value="partnership">Partnership Opportunities</option>
+                                    <option value="media">Media & Press</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required class="form-control" placeholder="Brief description of your inquiry">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required class="form-control" placeholder="Please provide details about your inquiry, startup idea, or how we can help you..." maxlength="500" oninput="handleMessageInput(this)"></textarea>
+                                <div class="character-counter" id="character-counter" style="display: none !important; margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-secondary);"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox" id="terms-checkbox" required style="margin-top: 0.1rem; width: 16px; height: 16px; flex-shrink: 0;">
+                                    <label for="terms-checkbox" style="margin: 0; cursor: pointer; line-height: 1.4;">
+                                        I agree to the <a href="#" style="color: var(--accent-blue); text-decoration: underline;">Terms of Service</a> and <a href="#" style="color: var(--accent-blue); text-decoration: underline;">Privacy Policy</a> <span style="color: #ef4444; font-weight: 500;">*</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%; position: relative; min-height: 48px; overflow: hidden;">
+                                <span class="btn-text" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">Send Message</span>
+                                <span class="btn-loading" style="display: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; align-items: center; justify-content: center; background: inherit; z-index: 2;">
+                                    <i class="fas fa-spinner fa-spin" style="margin-right: 0.5rem;"></i>Sending...
+                                </span>
+                            </button>
+                            
+                            <!-- Success/Error Messages -->
+                            <div id="form-message" style="margin-top: 1rem; padding: 1rem; border-radius: 8px; display: none;">
+                                <div id="success-message" style="display: none; color: var(--accent-green); background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3);">
+                                    <i class="fas fa-check-circle"></i> <strong>Message sent successfully!</strong> We'll get back to you within 24 hours.
+                                </div>
+                                <div id="error-message" style="display: none; color: #ef4444; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3);">
+                                    <i class="fas fa-exclamation-circle"></i> <strong>Error sending message.</strong> Please try again or contact us directly.
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Cards -->
+        <section style="padding: 60px 0; background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Quick Contact</h2>
+                    <p class="section-subtitle">For specific inquiries, reach out directly to the relevant department</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <!-- Incubation Contact -->
+                    <div class="card" style="opacity: 1; visibility: visible;">
+                        <div class="card-header">
+                            <h3><i class="fas fa-rocket" style="color: var(--accent-orange); margin-right: 0.5rem;"></i>Startup Incubation</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Have a startup idea? Want to join our incubation program?</p>
+                            <div style="margin-top: 1rem;">
+                                <p><strong>Contact:</strong> Dr. Rajesh Kumar</p>
+                                <p><strong>Email:</strong> incubation@sakececell.com</p>
+                                <p><strong>Phone:</strong> +91 98765 43212</p>
+                            </div>
+                            <div style="margin-top: 1rem;">
+                                <a href="mailto:incubation@sakececell.com" class="btn btn-primary">Email Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Events Contact -->
+                    <div class="card" style="opacity: 1; visibility: visible;">
+                        <div class="card-header">
+                            <h3><i class="fas fa-calendar" style="color: var(--accent-blue); margin-right: 0.5rem;"></i>Events & Workshops</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Questions about upcoming events or want to organize one?</p>
+                            <div style="margin-top: 1rem;">
+                                <p><strong>Contact:</strong> Kavya Reddy</p>
+                                <p><strong>Email:</strong> events@sakececell.com</p>
+                                <p><strong>Phone:</strong> +91 98765 43213</p>
+                            </div>
+                            <div style="margin-top: 1rem;">
+                                <a href="mailto:events@sakececell.com" class="btn btn-primary">Email Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Partnership Contact -->
+                    <div class="card" style="opacity: 1; visibility: visible;">
+                        <div class="card-header">
+                            <h3><i class="fas fa-handshake" style="color: var(--accent-green); margin-right: 0.5rem;"></i>Partnerships</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Interested in partnering with us or sponsoring events?</p>
+                            <div style="margin-top: 1rem;">
+                                <p><strong>Contact:</strong> Prof. Sunita Patil</p>
+                                <p><strong>Email:</strong> partner@sakececell.com</p>
+                                <p><strong>Phone:</strong> +91 98765 43214</p>
+                            </div>
+                            <div style="margin-top: 1rem;">
+                                <a href="mailto:partner@sakececell.com" class="btn btn-primary">Email Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Map -->
+        <section style="padding: 60px 0; background: var(--bg-primary);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Find Us</h2>
+                    <p class="section-subtitle">Visit our campus and innovation center</p>
+                </div>
+                <div style="background: var(--bg-secondary); border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px var(--shadow-light);">
+                    <!-- Interactive Google Map -->
+                    <div id="google-map" style="height: 450px; width: 100%; border-radius: 15px; position: relative;">
+                        <iframe 
+                            src="https://maps.google.com/maps?width=100%25&amp;height=450&amp;hl=en&amp;q=Shah%20and%20Anchor%20Kutchhi%20Engineering%20College,%20Chembur,%20Mumbai&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; border-radius: 15px; filter: var(--map-filter, none);" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="SAKEC Campus Location">
+                        </iframe>
+                        
+                        <!-- Map Overlay with College Info -->
+                        <div style="position: absolute; top: 20px; left: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 1rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); max-width: 280px; z-index: 10;">
+                            <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--accent-orange); font-size: 1.2rem; margin-right: 0.5rem;"></i>
+                                <h4 style="margin: 0; color: #333; font-size: 0.9rem;">SAKEC Campus</h4>
+                            </div>
+                            <p style="margin: 0; color: #555; font-size: 0.8rem; line-height: 1.3;">
+                                Shah & Anchor Kutchhi Engineering College<br>
+                                Chembur, Mumbai - 400088
+                            </p>
+                            <div style="margin-top: 0.8rem; display: flex; gap: 0.5rem;">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=Shah+and+Anchor+Kutchhi+Engineering+College,+Chembur,+Mumbai,+Maharashtra,+India" target="_blank" 
+                                   style="display: inline-flex; align-items: center; padding: 0.4rem 0.8rem; background: var(--accent-blue); color: white; text-decoration: none; border-radius: 6px; font-size: 0.75rem; transition: background 0.3s ease;">
+                                    <i class="fas fa-route" style="margin-right: 0.3rem; font-size: 0.7rem;"></i>
+                                    Directions
+                                </a>
+                                <a href="https://www.google.com/maps/search/Shah+and+Anchor+Kutchhi+Engineering+College,+Chembur,+Mumbai" target="_blank" 
+                                   style="display: inline-flex; align-items: center; padding: 0.4rem 0.8rem; background: var(--accent-green); color: white; text-decoration: none; border-radius: 6px; font-size: 0.75rem; transition: background 0.3s ease;">
+                                    <i class="fas fa-map-marked-alt" style="margin-right: 0.3rem; font-size: 0.7rem;"></i>
+                                    View
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Theme Toggle Button for Map -->
+                        <div style="position: absolute; top: 20px; right: 20px; z-index: 10;">
+                            <button id="map-theme-toggle" onclick="toggleMapTheme()" 
+                                    style="background: rgba(255, 255, 255, 0.9); border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;"
+                                    title="Toggle map theme">
+                                <i class="fas fa-adjust" style="color: #333; font-size: 0.9rem;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Directions -->
+                <div style="margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4><i class="fas fa-train" style="color: var(--accent-blue); margin-right: 0.5rem;"></i>By Train</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Nearest Stations:</strong> Chembur & Govandi<br>
+                            <strong>Line:</strong> Harbour Line (CST-Panvel)<br>
+                            <strong>Distance:</strong> 1.5-2 km from campus<br>
+                            <strong>Transport:</strong> Auto-rickshaw or walking available</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h4><i class="fas fa-bus" style="color: var(--accent-green); margin-right: 0.5rem;"></i>By Bus</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>BEST Bus Routes:</strong> 92, 181, 355, A-13, AS-592<br>
+                            <strong>Key Stops:</strong> Chembur Camp, RCF Colony<br>
+                            <strong>Walking Distance:</strong> 400-600m from stops<br>
+                            <strong>Frequency:</strong> Every 10-15 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h4><i class="fas fa-car" style="color: var(--accent-orange); margin-right: 0.5rem;"></i>By Car</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>From South Mumbai:</strong> Via Eastern Express Highway<br>
+                            <strong>From Western Suburbs:</strong> Via Sion-Panvel Highway<br>
+                            <strong>Parking:</strong> On-campus parking available<br>
+                            <strong>Travel Time:</strong> 30-60 mins (depending on traffic)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section style="padding: 60px 0; background: var(--bg-secondary);">
+            <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem; width: 100%;">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Quick answers to common questions</p>
+                </div>
+                <div style="max-width: 800px; width: 100%; display: flex; flex-direction: column; align-items: center; padding: 0 2rem;">
+                    <div class="card" style="margin-bottom: 1rem; opacity: 1; visibility: visible; width: 100%; max-width: 700px;">
+                        <div class="card-header" style="cursor: pointer; padding: 1.5rem; display: flex; justify-content: center; align-items: center; text-align: center; position: relative;" onclick="toggleFAQ(this)">
+                            <h4 style="margin: 0; color: var(--text-primary); flex: 1; text-align: center;">How can I join SAKEC E-Cell?</h4>
+                            <i class="fas fa-chevron-down" style="color: var(--accent-blue); transition: transform 0.3s ease; position: absolute; right: 1.5rem;"></i>
+                        </div>
+                        <div class="card-body" style="display: none; padding: 1.5rem; border-top: 1px solid var(--border-color);">
+                            <p style="margin: 0; color: var(--text-primary); line-height: 1.6; text-align: left;">Students can join by attending our recruitment drives held at the beginning of each academic year. We also accept applications throughout the year for specific roles. Follow our social media for announcements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="margin-bottom: 1rem; opacity: 1; visibility: visible; width: 100%; max-width: 700px;">
+                        <div class="card-header" style="cursor: pointer; padding: 1.5rem; display: flex; justify-content: center; align-items: center; text-align: center; position: relative;" onclick="toggleFAQ(this)">
+                            <h4 style="margin: 0; color: var(--text-primary); flex: 1; text-align: center;">Do you accept startups from other colleges?</h4>
+                            <i class="fas fa-chevron-down" style="color: var(--accent-blue); transition: transform 0.3s ease; position: absolute; right: 1.5rem;"></i>
+                        </div>
+                        <div class="card-body" style="display: none; padding: 1.5rem; border-top: 1px solid var(--border-color);">
+                            <p style="margin: 0; color: var(--text-primary); line-height: 1.6; text-align: left;">Yes! While our primary focus is on SAKEC students, we welcome innovative startups from other institutions. External applicants go through a competitive selection process.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="margin-bottom: 1rem; opacity: 1; visibility: visible; width: 100%; max-width: 700px;">
+                        <div class="card-header" style="cursor: pointer; padding: 1.5rem; display: flex; justify-content: center; align-items: center; text-align: center; position: relative;" onclick="toggleFAQ(this)">
+                            <h4 style="margin: 0; color: var(--text-primary); flex: 1; text-align: center;">What kind of support do you provide to startups?</h4>
+                            <i class="fas fa-chevron-down" style="color: var(--accent-blue); transition: transform 0.3s ease; position: absolute; right: 1.5rem;"></i>
+                        </div>
+                        <div class="card-body" style="display: none; padding: 1.5rem; border-top: 1px solid var(--border-color);">
+                            <p style="margin: 0; color: var(--text-primary); line-height: 1.6; text-align: left;">We provide mentorship, workspace, initial funding (up to ₹10 lakhs), legal support, networking opportunities, and access to our alumni network of successful entrepreneurs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="margin-bottom: 1rem; opacity: 1; visibility: visible; width: 100%; max-width: 700px;">
+                        <div class="card-header" style="cursor: pointer; padding: 1.5rem; display: flex; justify-content: center; align-items: center; text-align: center; position: relative;" onclick="toggleFAQ(this)">
+                            <h4 style="margin: 0; color: var(--text-primary); flex: 1; text-align: center;">How long is the incubation program?</h4>
+                            <i class="fas fa-chevron-down" style="color: var(--accent-blue); transition: transform 0.3s ease; position: absolute; right: 1.5rem;"></i>
+                        </div>
+                        <div class="card-body" style="display: none; padding: 1.5rem; border-top: 1px solid var(--border-color);">
+                            <p style="margin: 0; color: var(--text-primary); line-height: 1.6; text-align: left;">Our standard incubation program is 6 months, with possibility of extension based on progress and requirements. We also offer pre-incubation programs for early-stage ideas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="opacity: 1; visibility: visible; width: 100%; max-width: 700px;">
+                        <div class="card-header" style="cursor: pointer; padding: 1.5rem; display: flex; justify-content: center; align-items: center; text-align: center; position: relative;" onclick="toggleFAQ(this)">
+                            <h4 style="margin: 0; color: var(--text-primary); flex: 1; text-align: center;">Are your events open to external participants?</h4>
+                            <i class="fas fa-chevron-down" style="color: var(--accent-blue); transition: transform 0.3s ease; position: absolute; right: 1.5rem;"></i>
+                        </div>
+                        <div class="card-body" style="display: none; padding: 1.5rem; border-top: 1px solid var(--border-color);">
+                            <p style="margin: 0; color: var(--text-primary); line-height: 1.6; text-align: left;">Most of our events are open to external participants. Some workshops may have limited seats with priority given to SAKEC students. Check individual event details for specific requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=50&h=50&fit=crop&crop=center" alt="SAKEC E-Cell Logo">
+                        <span>SAKEC E-Cell</span>
+                    </div>
+                    <p>Empowering students to become successful entrepreneurs and innovators of tomorrow.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="startups.html">Startups</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Incubation</a></li>
+                        <li><a href="#">Mentorship</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Competitions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Startup Guide</a></li>
+                        <li><a href="#">Funding Info</a></li>
+                        <li><a href="#">Legal Support</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SAKEC E-Cell. All rights reserved. | Designed with ❤️ for entrepreneurs</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+      <!-- FAQ Toggle Script -->
+    <script>
+        // EmailJS Configuration
+        (function() {
+            // Initialize EmailJS with your User ID
+            emailjs.init("souEf_7kBcfBhcISN"); // Replace with your actual EmailJS User ID
+        })();
+
+        // EmailJS Form Handling for Contact Page
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const submitBtn = document.getElementById('contact-submit-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoading = submitBtn.querySelector('.btn-loading');
+            const formMessage = document.getElementById('form-message');
+            const successMessage = document.getElementById('success-message');
+            const errorMessage = document.getElementById('error-message');
+            
+            // Show loading state
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'flex';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.8';
+            submitBtn.style.cursor = 'not-allowed';
+            
+            // Hide previous messages
+            formMessage.style.display = 'none';
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+            
+            // Prepare template parameters
+            const templateParams = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                fullName: document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value,
+                name: document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value, // For compatibility
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                organization: document.getElementById('organization').value,
+                department: document.getElementById('department').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+                to_name: 'SAKEC E-Cell Team',
+                form_type: 'Contact Form',
+                submission_date: new Date().toLocaleDateString('en-IN', {
+                    day: 'numeric',
+                    month: 'long', 
+                    year: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                })
+            };
+            
+            // Send email using EmailJS
+            console.log('Sending email with params:', templateParams);
+            console.log('Using service: service_e-cell-mail');
+            console.log('Using template: template_home-mail');
+            
+            emailjs.send('service_e-cell-mail', 'template_home-mail', templateParams)
+                .then(function(response) {
+                    console.log('EMAIL SUCCESS!', response.status, response.text);
+                    console.log('Full response:', response);
+                    
+                    // Hide all messages first
+                    formMessage.style.display = 'none';
+                    successMessage.style.display = 'none';
+                    errorMessage.style.display = 'none';
+                    
+                    // Show success message
+                    successMessage.style.display = 'block';
+                    formMessage.style.display = 'block';
+                    
+                    // Reset form
+                    document.getElementById('contact-form').reset();
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        formMessage.style.display = 'none';
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                    
+                }, function(error) {
+                    console.log('EMAIL FAILED!', error);
+                    console.log('Error details:', error);
+                    console.log('Error text:', error.text);
+                    console.log('Error status:', error.status);
+                    
+                    // Hide all messages first
+                    formMessage.style.display = 'none';
+                    successMessage.style.display = 'none';
+                    errorMessage.style.display = 'none';
+                    
+                    // Show error message with details
+                    errorMessage.innerHTML = `
+                        <i class="fas fa-exclamation-circle"></i> 
+                        <strong>Error sending message.</strong><br>
+                        Details: ${error.text || 'Unknown error'}<br>
+                        Please check console for more info.
+                    `;
+                    errorMessage.style.display = 'block';
+                    formMessage.style.display = 'block';
+                    
+                    // Hide error message after 10 seconds (longer for debugging)
+                    setTimeout(() => {
+                        formMessage.style.display = 'none';
+                        errorMessage.style.display = 'none';
+                    }, 10000);
+                })
+                .finally(function() {
+                    // Reset button state
+                    btnText.style.display = 'flex';
+                    btnLoading.style.display = 'none';
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.style.cursor = 'pointer';
+                });
+        });
+
+        // Map theme toggle functionality
+        let mapDarkMode = false;
+        let mapLoaded = false;
+        
+        function toggleMapTheme() {
+            const mapFrame = document.querySelector('#google-map iframe');
+            const toggleBtn = document.querySelector('#map-theme-toggle i');
+            
+            if (!mapFrame) return;
+            
+            if (!mapDarkMode) {
+                // Apply dark mode filter
+                mapFrame.style.filter = 'invert(0.9) hue-rotate(180deg) saturate(0.8) brightness(0.9)';
+                toggleBtn.className = 'fas fa-sun';
+                mapDarkMode = true;
+            } else {
+                // Remove dark mode filter
+                mapFrame.style.filter = 'none';
+                toggleBtn.className = 'fas fa-adjust';
+                mapDarkMode = false;
+            }
+        }
+        
+        // Auto-apply dark mode to map based on current theme
+        function syncMapWithTheme() {
+            const isDarkMode = document.body.classList.contains('dark-mode') || 
+                              localStorage.getItem('theme') === 'dark';
+            
+            if (isDarkMode && !mapDarkMode) {
+                toggleMapTheme();
+            } else if (!isDarkMode && mapDarkMode) {
+                toggleMapTheme();
+            }
+        }
+        
+        // Map loading handler
+        function handleMapLoad() {
+            const mapFrame = document.querySelector('#google-map iframe');
+            if (mapFrame) {
+                mapFrame.addEventListener('load', function() {
+                    mapLoaded = true;
+                    console.log('Google Maps loaded successfully');
+                });
+                
+                mapFrame.addEventListener('error', function() {
+                    console.error('Google Maps failed to load');
+                    showMapFallback();
+                });
+            }
+        }
+        
+        // Fallback map display
+        function showMapFallback() {
+            const mapContainer = document.querySelector('#google-map');
+            if (mapContainer) {
+                mapContainer.innerHTML = `
+                    <div style="height: 450px; background: linear-gradient(135deg, var(--bg-secondary), var(--border-color)); display: flex; align-items: center; justify-content: center; color: var(--text-secondary); border-radius: 15px;">
+                        <div style="text-align: center; padding: 2rem;">
+                            <i class="fas fa-map-marker-alt" style="font-size: 3rem; margin-bottom: 1rem; color: var(--accent-orange);"></i>
+                            <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">SAKEC Campus Location</h3>
+                            <p style="margin-bottom: 1rem;">Chembur, Mumbai - 400088</p>
+                            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=Shah+and+Anchor+Kutchhi+Engineering+College,+Chembur,+Mumbai,+Maharashtra,+India" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-route" style="margin-right: 0.5rem;"></i>Get Directions
+                                </a>
+                                <a href="https://www.google.com/maps/search/Shah+and+Anchor+Kutchhi+Engineering+College,+Chembur,+Mumbai" target="_blank" class="btn btn-secondary">
+                                    <i class="fas fa-map-marked-alt" style="margin-right: 0.5rem;"></i>View on Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Listen for theme changes
+        document.addEventListener('DOMContentLoaded', function() {
+            handleMapLoad();
+            syncMapWithTheme();
+            
+            // Listen for theme toggle clicks
+            const themeToggle = document.getElementById('theme-toggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    setTimeout(syncMapWithTheme, 100); // Small delay to let theme change complete
+                });
+            }
+            
+            // Add map interaction enhancements
+            const mapContainer = document.querySelector('#google-map');
+            if (mapContainer) {
+                mapContainer.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                mapContainer.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            }
+        });
+        
+        function toggleFAQ(element) {
+            const cardBody = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            if (cardBody.style.display === 'none' || cardBody.style.display === '') {
+                cardBody.style.display = 'block';
+                icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                cardBody.style.display = 'none';
+                icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function handleMessageInput(textarea) {
+            const counter = document.getElementById('character-counter');
+            const currentLength = textarea.value.length;
+            const maxLength = 500;
+            
+            // Show counter when approaching limit (450+ characters) or at limit
+            if (currentLength >= 450) {
+                counter.style.display = 'block';
+                counter.style.visibility = 'visible';
+                counter.textContent = `${currentLength}/${maxLength}`;
+                
+                // Turn red when at or near limit
+                if (currentLength >= 490) {
+                    counter.style.color = '#ef4444'; // Red color
+                    if (currentLength >= maxLength) {
+                        counter.textContent = `Maximum characters reached (${maxLength})`;
+                    }
+                } else {
+                    counter.style.color = 'var(--text-secondary)'; // Normal color
+                }
+            } else {
+                counter.style.display = 'none';
+                counter.style.visibility = 'hidden';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - SAKEC E-Cell</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=50&h=50&fit=crop&crop=center" alt="SAKEC E-Cell Logo">
+                    <span>SAKEC E-Cell</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="events.html" class="nav-link active">Events</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="startups.html" class="nav-link">Startups</a></li>
+                    <li><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon theme-icon" id="theme-icon"></i>
+                    </button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Upcoming Events</h1>
+            <p class="page-subtitle">Join us for exciting workshops, competitions, and networking opportunities</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="page-container">
+        <!-- Event Filters -->
+        <section class="event-filters-section">
+            <div class="container">
+                <div class="filters-header">
+                    <h2>Filter Events</h2>
+                    <div class="filters-container">
+                        <button class="btn btn-secondary event-filter-btn active" data-filter="all">All Events</button>
+                        <button class="btn btn-secondary event-filter-btn" data-filter="workshop">Workshops</button>
+                        <button class="btn btn-secondary event-filter-btn" data-filter="competition">Competitions</button>
+                        <button class="btn btn-secondary event-filter-btn" data-filter="networking">Networking</button>
+                        <button class="btn btn-secondary event-filter-btn" data-filter="seminar">Seminars</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="events upcoming-events-section">
+            <div class="container">
+                <div class="events-grid">
+                    <!-- Event Card 1 -->
+                    <div class="event-card animate-on-scroll" data-category="competition">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=250&fit=crop&crop=center" alt="Startup Pitch Competition">
+                            <div class="event-date">
+                                <span class="month">Aug</span>
+                                <span class="day">15</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Startup Pitch Competition 2025</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 5:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> SAKEC Auditorium</p>
+                            <p class="event-description">Present your innovative ideas to industry experts and win exciting prizes worth ₹2 lakhs. Open to all engineering students.</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 2 -->
+                    <div class="event-card animate-on-scroll" data-category="workshop">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop&crop=center" alt="Entrepreneurship Workshop">
+                            <div class="event-date">
+                                <span class="month">Aug</span>
+                                <span class="day">22</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Digital Marketing for Startups</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 2:00 PM - 6:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Conference Hall A</p>
+                            <p class="event-description">Learn essential digital marketing strategies for startups from industry experts. Hands-on session with tools and case studies.</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 3 -->
+                    <div class="event-card animate-on-scroll" data-category="networking">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop&crop=center" alt="Networking Meetup">
+                            <div class="event-date">
+                                <span class="month">Sep</span>
+                                <span class="day">05</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Entrepreneur Networking Night</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 6:00 PM - 9:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Campus Cafeteria</p>
+                            <p class="event-description">Connect with fellow entrepreneurs, share experiences, and build valuable partnerships. Special guest appearances by successful alumni.</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 4 -->
+                    <div class="event-card animate-on-scroll" data-category="seminar">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=250&fit=crop&crop=center" alt="Tech Seminar">
+                            <div class="event-date">
+                                <span class="month">Sep</span>
+                                <span class="day">12</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3>AI in Entrepreneurship</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 11:00 AM - 1:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Tech Hub</p>
+                            <p class="event-description">Explore how artificial intelligence is transforming the startup ecosystem and creating new opportunities for entrepreneurs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 5 -->
+                    <div class="event-card animate-on-scroll" data-category="workshop">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop&crop=center" alt="Design Thinking Workshop">
+                            <div class="event-date">
+                                <span class="month">Sep</span>
+                                <span class="day">18</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Design Thinking Bootcamp</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Innovation Lab</p>
+                            <p class="event-description">Intensive full-day workshop on design thinking methodology. Learn to identify problems and create user-centered solutions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 6 -->
+                    <div class="event-card animate-on-scroll" data-category="competition">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop&crop=center" alt="Hackathon">
+                            <div class="event-date">
+                                <span class="month">Sep</span>
+                                <span class="day">25</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3>SustainaTech Hackathon</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 48 Hours</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Main Campus</p>
+                            <p class="event-description">48-hour hackathon focused on sustainability solutions. Build innovative tech products that address environmental challenges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Events -->
+        <section class="past-events-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Past Events Highlights</h2>
+                    <p class="section-subtitle">Check out our successful events and their impact</p>
+                </div>
+                <div class="events-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Startup India Campus Ambassador Program</h3>
+                            <span class="event-date-text">March 2025</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Successfully conducted a 3-day intensive program with 200+ participants. Featured guest speakers from top startups and VCs.</p>
+                            <div class="event-metrics">
+                                <span class="metric"><i class="fas fa-users"></i> 200+ Attendees</span>
+                                <span class="metric"><i class="fas fa-star"></i> 4.8/5 Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Women in Tech Summit</h3>
+                            <span class="event-date-text">February 2025</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Celebrating women entrepreneurs and their contributions to the tech ecosystem. Panel discussions and networking sessions.</p>
+                            <div class="event-metrics">
+                                <span class="metric"><i class="fas fa-users"></i> 150+ Attendees</span>
+                                <span class="metric"><i class="fas fa-trophy"></i> 5 Awards</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Fintech Innovation Challenge</h3>
+                            <span class="event-date-text">January 2025</span>
+                        </div>
+                        <div class="card-body">
+                            <p>24-hour hackathon focused on financial technology solutions. Winning team received ₹1 lakh prize and incubation opportunity.</p>
+                            <div class="event-metrics">
+                                <span class="metric"><i class="fas fa-code"></i> 50+ Teams</span>
+                                <span class="metric"><i class="fas fa-coins"></i> ₹1L Prize</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Guidelines -->
+        <section class="event-guidelines-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Event Guidelines</h2>
+                    <p class="section-subtitle">Important information for event participants</p>
+                </div>
+                <div class="guidelines-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-user-check"></i> Registration</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="guidelines-list">
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Register online before the deadline</li>
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Valid student ID required</li>
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Confirmation email will be sent</li>
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Free for SAKEC students</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-clock"></i> Attendance</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="guidelines-list">
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Arrive 15 minutes early</li>
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Bring registered email confirmation</li>
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Laptop required for workshops</li>
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Certificates will be provided</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-gift"></i> Benefits</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="guidelines-list">
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Networking opportunities</li>
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Industry expert mentorship</li>
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Skills development</li>
+                                <li class="guideline-item"><i class="fas fa-check guideline-icon"></i> Competition prizes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact for Events -->
+        <section class="event-contact-section">
+            <div class="container">
+                <h2 class="contact-title">Want to Organize an Event?</h2>
+                <p class="contact-subtitle">Have an idea for an event? Partner with us or suggest topics for our upcoming sessions.</p>
+                <div class="contact-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="mailto:events@sakececell.com" class="btn btn-outline">Email Events Team</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=50&h=50&fit=crop&crop=center" alt="SAKEC E-Cell Logo">
+                        <span>SAKEC E-Cell</span>
+                    </div>
+                    <p>Empowering students to become successful entrepreneurs and innovators of tomorrow.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="startups.html">Startups</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Incubation</a></li>
+                        <li><a href="#">Mentorship</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Competitions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Startup Guide</a></li>
+                        <li><a href="#">Funding Info</a></li>
+                        <li><a href="#">Legal Support</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SAKEC E-Cell. All rights reserved. | Designed with ❤️ for entrepreneurs</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>

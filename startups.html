@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Startups - SAKEC E-Cell</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=50&h=50&fit=crop&crop=center" alt="SAKEC E-Cell Logo">
+                    <span>SAKEC E-Cell</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="startups.html" class="nav-link active">Startups</a></li>
+                    <li><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon theme-icon" id="theme-icon"></i>
+                    </button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Startups</h1>
+            <p class="page-subtitle">Success stories from our incubation program and entrepreneurial community</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="page-container">
+        <!-- Startup Categories -->
+        <section style="padding: 90px 0 40px; background: var(--bg-primary);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2 style="margin-bottom: 1rem;">Filter by Category</h2>
+                    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                        <button class="btn btn-secondary startup-category-btn active" data-category="all">All Startups</button>
+                        <button class="btn btn-secondary startup-category-btn" data-category="fintech">FinTech</button>
+                        <button class="btn btn-secondary startup-category-btn" data-category="edtech">EdTech</button>
+                        <button class="btn btn-secondary startup-category-btn" data-category="healthcare">HealthTech</button>
+                        <button class="btn btn-secondary startup-category-btn" data-category="sustainability">GreenTech</button>
+                        <button class="btn btn-secondary startup-category-btn" data-category="ecommerce">E-Commerce</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section style="padding: 60px 0; background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Startup Ecosystem Stats</h2>
+                    <p class="section-subtitle">Our collective impact on the entrepreneurial landscape</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Startups Incubated</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-number">₹15Cr+</div>
+                        <div class="stat-label">Total Funding Raised</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Jobs Created</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Active Startups</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Startups -->
+        <section style="padding: 80px 0; background: var(--bg-primary);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Startups</h2>
+                    <p class="section-subtitle">Our most successful and innovative ventures</p>
+                </div>
+                <div class="startups-grid">
+                    <!-- Startup 1 -->
+                    <div class="startup-card animate-on-scroll" data-startup-id="techsolve" data-category="edtech">
+                        <div class="startup-logo">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=100&h=100&fit=crop&crop=center" alt="TechSolve Logo">
+                        </div>
+                        <h3>TechSolve</h3>
+                        <p class="startup-category">EdTech</p>
+                        <p>AI-powered learning platform that personalizes education for students across different learning styles.</p>
+                        <div class="startup-metrics">
+                            <span class="metric"><i class="fas fa-users"></i> 50K+ Users</span>
+                            <span class="metric"><i class="fas fa-chart-line"></i> Series A</span>
+                        </div>
+                    </div>
+
+                    <!-- Startup 2 -->
+                    <div class="startup-card animate-on-scroll" data-startup-id="greentech" data-category="sustainability">
+                        <div class="startup-logo">
+                            <img src="https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=100&h=100&fit=crop&crop=center" alt="GreenTech Logo">
+                        </div>
+                        <h3>GreenTech Solutions</h3>
+                        <p class="startup-category">Sustainability</p>
+                        <p>Innovative waste management and renewable energy solutions for smart cities.</p>
+                        <div class="startup-metrics">
+                            <span class="metric"><i class="fas fa-leaf"></i> 10 Cities</span>
+                            <span class="metric"><i class="fas fa-award"></i> Green Award</span>
+                        </div>
+                    </div>
+
+                    <!-- Startup 3 -->
+                    <div class="startup-card animate-on-scroll" data-startup-id="healthtech" data-category="healthcare">
+                        <div class="startup-logo">
+                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=100&h=100&fit=crop&crop=center" alt="HealthTech Logo">
+                        </div>
+                        <h3>HealthTech Plus</h3>
+                        <p class="startup-category">Healthcare</p>
+                        <p>Telemedicine platform connecting patients with healthcare professionals for remote consultations.</p>
+                        <div class="startup-metrics">
+                            <span class="metric"><i class="fas fa-heartbeat"></i> 100K+ Patients</span>
+                            <span class="metric"><i class="fas fa-stethoscope"></i> 1000+ Doctors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Startups -->
+        <section style="padding: 80px 0; background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">All Startups</h2>
+                    <p class="section-subtitle">Complete portfolio of SAKEC E-Cell incubated ventures</p>
+                </div>
+                <div class="startups-grid">
+                    <!-- FinTech Startup -->
+                    <div class="startup-card animate-on-scroll" data-startup-id="financeflow" data-category="fintech">
+                        <div class="startup-logo">
+                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=100&h=100&fit=crop&crop=center" alt="FinanceFlow Logo">
+                        </div>
+                        <h3>FinanceFlow</h3>
+                        <p class="startup-category">FinTech</p>
+                        <p>Digital financial planning and investment platform for young professionals and students.</p>
+                        <div class="startup-metrics">
+                            <span class="metric"><i class="fas fa-coins"></i> ₹150Cr AUM</span>
+                            <span class="metric"><i class="fas fa-users"></i> 25K Users</span>
+                        </div>
+                    </div>
+
+                    <!-- E-Commerce Startup -->
+                    <div class="startup-card animate-on-scroll" data-startup-id="campuskart" data-category="ecommerce">
+                        <div class="startup-logo">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=100&h=100&fit=crop&crop=center" alt="CampusKart Logo">
+                        </div>
+                        <h3>CampusKart</h3>
+                        <p class="startup-category">E-Commerce</p>
+                        <p>Online marketplace exclusively for college students to buy, sell, and rent study materials and equipment.</p>
+                        <div class="startup-metrics">
+                            <span class="metric"><i class="fas fa-shopping-cart"></i> 15K Orders</span>
+                            <span class="metric"><i class="fas fa-university"></i> 50 Colleges</span>
+                        </div>
+                    </div>
+
+                    <!-- FoodTech Startup -->
+                    <div class="startup-card animate-on-scroll" data-startup-id="tastybites" data-category="ecommerce">
+                        <div class="startup-logo">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=100&h=100&fit=crop&crop=center" alt="TastyBites Logo">
+                        </div>
+                        <h3>TastyBites</h3>
+                        <p class="startup-category">FoodTech</p>
+                        <p>Healthy meal delivery service focusing on nutritious food options for students and working professionals.</p>
+                        <div class="startup-metrics">
+                            <span class="metric"><i class="fas fa-utensils"></i> 5K Meals/Day</span>
+                            <span class="metric"><i class="fas fa-heart"></i> Healthy Focus</span>
+                        </div>
+                    </div>
+
+                    <!-- AgriTech Startup -->
+                    <div class="startup-card animate-on-scroll" data-startup-id="smartfarm" data-category="sustainability">
+                        <div class="startup-logo">
+                            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=100&h=100&fit=crop&crop=center" alt="SmartFarm Logo">
+                        </div>
+                        <h3>SmartFarm Tech</h3>
+                        <p class="startup-category">AgriTech</p>
+                        <p>IoT-based smart farming solutions helping farmers optimize crop yields using data analytics.</p>
+                        <div class="startup-metrics">
+                            <span class="metric"><i class="fas fa-seedling"></i> 1000+ Farms</span>
+                            <span class="metric"><i class="fas fa-chart-line"></i> 30% Yield ↑</span>
+                        </div>
+                    </div>
+
+                    <!-- GameTech Startup -->
+                    <div class="startup-card animate-on-scroll" data-startup-id="gameverse" data-category="edtech">
+                        <div class="startup-logo">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=100&h=100&fit=crop&crop=center" alt="GameVerse Logo">
+                        </div>
+                        <h3>GameVerse</h3>
+                        <p class="startup-category">GameTech</p>
+                        <p>Educational gaming platform that makes learning fun through interactive games and challenges.</p>
+                        <div class="startup-metrics">
+                            <span class="metric"><i class="fas fa-gamepad"></i> 100K Downloads</span>
+                            <span class="metric"><i class="fas fa-graduation-cap"></i> 50+ Schools</span>
+                        </div>
+                    </div>
+
+                    <!-- LogisTech Startup -->
+                    <div class="startup-card animate-on-scroll" data-startup-id="quickmove" data-category="ecommerce">
+                        <div class="startup-logo">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=100&h=100&fit=crop&crop=center" alt="QuickMove Logo">
+                        </div>
+                        <h3>QuickMove</h3>
+                        <p class="startup-category">LogisTech</p>
+                        <p>Last-mile delivery optimization platform helping local businesses deliver products efficiently.</p>
+                        <div class="startup-metrics">
+                            <span class="metric"><i class="fas fa-truck"></i> 500+ Deliveries</span>
+                            <span class="metric"><i class="fas fa-clock"></i> 30min Avg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section style="padding: 80px 0; background: var(--bg-primary);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Success Stories</h2>
+                    <p class="section-subtitle">Inspiring journeys from idea to successful ventures</p>
+                </div>
+                
+                <!-- Horizontal Scrolling Testimonials -->
+                <div class="testimonials-container" style="position: relative; overflow: hidden; margin-top: 3rem; mask: linear-gradient(to right, transparent, black 10%, black 90%, transparent);">
+                    <div class="testimonials-track" id="testimonialsTrack" style="display: flex; gap: 2rem; animation: scroll-testimonials 25s linear infinite; width: max-content;">
+                        
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card" style="min-width: 400px; max-width: 400px; background: var(--card-bg); border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px var(--shadow-light); flex-shrink: 0;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=60&h=60&fit=crop&crop=center" alt="TechSolve" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div>
+                                    <h4 style="margin: 0; color: var(--text-primary);">Arjun Patel</h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Co-founder, TechSolve</p>
+                                    <div style="color: var(--accent-orange); font-size: 0.8rem; font-weight: 600;">EdTech • Series A</div>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-primary); line-height: 1.6; margin: 0; font-style: italic;">"Starting at SAKEC E-Cell gave us the perfect platform to validate our idea and connect with mentors. The incubation program provided essential resources and guidance that transformed our concept into a thriving business with 50K+ users."</p>
+                            <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                                <span style="color: var(--accent-orange);">★★★★★</span>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card" style="min-width: 400px; max-width: 400px; background: var(--card-bg); border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px var(--shadow-light); flex-shrink: 0;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <img src="https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=60&h=60&fit=crop&crop=center" alt="GreenTech" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div>
+                                    <h4 style="margin: 0; color: var(--text-primary);">Priya Sharma</h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">CEO, GreenTech Solutions</p>
+                                    <div style="color: var(--accent-green); font-size: 0.8rem; font-weight: 600;">GreenTech • 10 Cities</div>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-primary); line-height: 1.6; margin: 0; font-style: italic;">"The mentorship and networking opportunities at E-Cell helped us understand market needs and build partnerships with municipalities across India. We've now expanded to 10 cities and processed over 1000 tons of waste."</p>
+                            <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                                <span style="color: var(--accent-orange);">★★★★★</span>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card" style="min-width: 400px; max-width: 400px; background: var(--card-bg); border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px var(--shadow-light); flex-shrink: 0;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=60&h=60&fit=crop&crop=center" alt="HealthTech" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div>
+                                    <h4 style="margin: 0; color: var(--text-primary);">Dr. Rohit Kumar</h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Founder, HealthTech Plus</p>
+                                    <div style="color: var(--accent-blue); font-size: 0.8rem; font-weight: 600;">HealthTech • 100K+ Patients</div>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-primary); line-height: 1.6; margin: 0; font-style: italic;">"E-Cell's focus on social impact helped us align our healthcare solution with real community needs. The platform provided credibility and initial user base. We now serve over 100K patients monthly."</p>
+                            <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                                <span style="color: var(--accent-orange);">★★★★★</span>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card" style="min-width: 400px; max-width: 400px; background: var(--card-bg); border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px var(--shadow-light); flex-shrink: 0;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=60&h=60&fit=crop&crop=center" alt="FinanceFlow" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div>
+                                    <h4 style="margin: 0; color: var(--text-primary);">Kavya Reddy</h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Co-founder, FinanceFlow</p>
+                                    <div style="color: var(--accent-blue); font-size: 0.8rem; font-weight: 600;">FinTech • ₹150Cr AUM</div>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-primary); line-height: 1.6; margin: 0; font-style: italic;">"The structured incubation program at SAKEC E-Cell taught us the fundamentals of building a scalable fintech platform. The mentorship in regulatory compliance and user acquisition was invaluable for our growth."</p>
+                            <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                                <span style="color: var(--accent-orange);">★★★★★</span>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="testimonial-card" style="min-width: 400px; max-width: 400px; background: var(--card-bg); border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px var(--shadow-light); flex-shrink: 0;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=60&h=60&fit=crop&crop=center" alt="CampusKart" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div>
+                                    <h4 style="margin: 0; color: var(--text-primary);">Ravi Mehta</h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Founder, CampusKart</p>
+                                    <div style="color: var(--accent-green); font-size: 0.8rem; font-weight: 600;">E-Commerce • 50K Orders/Month</div>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-primary); line-height: 1.6; margin: 0; font-style: italic;">"E-Cell helped us understand the student market deeply and provided access to a network of potential customers. Starting on campus gave us the perfect testing ground before scaling nationwide."</p>
+                            <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                                <span style="color: var(--accent-orange);">★★★★★</span>
+                            </div>
+                        </div>
+
+                        <!-- Duplicate testimonials for seamless loop -->
+                        <!-- Testimonial 1 (Duplicate) -->
+                        <div class="testimonial-card" style="min-width: 400px; max-width: 400px; background: var(--card-bg); border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px var(--shadow-light); flex-shrink: 0;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=60&h=60&fit=crop&crop=center" alt="TechSolve" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div>
+                                    <h4 style="margin: 0; color: var(--text-primary);">Arjun Patel</h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Co-founder, TechSolve</p>
+                                    <div style="color: var(--accent-orange); font-size: 0.8rem; font-weight: 600;">EdTech • Series A</div>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-primary); line-height: 1.6; margin: 0; font-style: italic;">"Starting at SAKEC E-Cell gave us the perfect platform to validate our idea and connect with mentors. The incubation program provided essential resources and guidance that transformed our concept into a thriving business with 50K+ users."</p>
+                            <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                                <span style="color: var(--accent-orange);">★★★★★</span>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 (Duplicate) -->
+                        <div class="testimonial-card" style="min-width: 400px; max-width: 400px; background: var(--card-bg); border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px var(--shadow-light); flex-shrink: 0;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <img src="https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=60&h=60&fit=crop&crop=center" alt="GreenTech" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div>
+                                    <h4 style="margin: 0; color: var(--text-primary);">Priya Sharma</h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">CEO, GreenTech Solutions</p>
+                                    <div style="color: var(--accent-green); font-size: 0.8rem; font-weight: 600;">GreenTech • 10 Cities</div>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-primary); line-height: 1.6; margin: 0; font-style: italic;">"The mentorship and networking opportunities at E-Cell helped us understand market needs and build partnerships with municipalities across India. We've now expanded to 10 cities and processed over 1000 tons of waste."</p>
+                            <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                                <span style="color: var(--accent-orange);">★★★★★</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- Auto-scroll indicator -->
+                <div style="text-align: center; margin-top: 2rem; color: var(--text-secondary); font-size: 0.9rem;">
+                    <i class="fas fa-infinity"></i> Continuously scrolling testimonials <i class="fas fa-infinity"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apply for Incubation -->
+        <section style="padding: 80px 0; background: linear-gradient(135deg, #2563eb, #f97316); color: white; text-align: center;">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Build Your Startup?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">Join our incubation program and get access to mentorship, funding, and resources to build your dream venture.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn" style="background: white; color: #2563eb; border: none;">Apply for Incubation</a>
+                    <a href="about.html" class="btn" style="background: transparent; color: white; border: 2px solid white;">Learn About Our Program</a>
+                </div>
+                <div style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; opacity: 0.9;">
+                    <div>
+                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">6 Months</div>
+                        <div>Incubation Program</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">₹10L</div>
+                        <div>Max Seed Funding</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">50+</div>
+                        <div>Expert Mentors</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">24/7</div>
+                        <div>Workspace Access</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=50&h=50&fit=crop&crop=center" alt="SAKEC E-Cell Logo">
+                        <span>SAKEC E-Cell</span>
+                    </div>
+                    <p>Empowering students to become successful entrepreneurs and innovators of tomorrow.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="startups.html">Startups</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Incubation</a></li>
+                        <li><a href="#">Mentorship</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Competitions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Startup Guide</a></li>
+                        <li><a href="#">Funding Info</a></li>
+                        <li><a href="#">Legal Support</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SAKEC E-Cell. All rights reserved. | Designed with ❤️ for entrepreneurs</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+    
+    <!-- CSS Animation for Testimonials -->
+    <style>
+        @keyframes scroll-testimonials {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-2520px); /* 5 cards × 420px (400px + 20px gap) */
+            }
+        }
+        
+        /* Pause animation on hover for better UX */
+        .testimonials-container:hover .testimonials-track {
+            animation-play-state: paused;
+        }
+        
+        /* Smooth fade effects on sides */
+        .testimonials-container::before,
+        .testimonials-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 50px;
+            height: 100%;
+            z-index: 10;
+            pointer-events: none;
+        }
+        
+        .testimonials-container::before {
+            left: 0;
+            background: linear-gradient(to right, var(--bg-primary), transparent);
+        }
+        
+        .testimonials-container::after {
+            right: 0;
+            background: linear-gradient(to left, var(--bg-primary), transparent);
+        }
+    </style>
+</body>
+</html>
